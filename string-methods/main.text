@@ -1,0 +1,7 @@
+String methods in JavaScript
+About them:
+-> There are 34 important string methods in JavaScript
+  - length: returns the total numbers of letters in a string starting from 1 and includes space
+  - .[x]: they are used to access a certain letter on the position indicated between brackets
+  -  charAt(): also returns the letter at the required position.
+  - 

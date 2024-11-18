@@ -1,4 +1,2 @@
-function complete() {
-    return "Completed Udacity course"
-}
-console.log(complete());
+function complete() { }
+console.log(typeof complete());

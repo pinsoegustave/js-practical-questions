@@ -7,4 +7,8 @@ About them:
 Difference between [] and charAt() in accessing a string on a specified index
   The String object's charAt() method returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string. while []just returns the letter without minding about single UTF-16 code unit
   charAt() returns an empty string "" if the index is out of bounds while [] returns undefined. charAt is older and [] is the newest ES5+ 
-  - 
+  - charCodeAt(): Returns the Unicode value of the character at the specified location.
+  UpperCase, A - Z: 65 - 90
+  LowerCase, a - z: 97 - 122
+  Numbers, 0 - 9:  48 - 57
+   

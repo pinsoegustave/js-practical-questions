@@ -31,3 +31,7 @@ About them:
   - slice(start, end): Extracts a section of the string and returns it as a new string.
   - substring(start, end): similar to slice, but doesnot accept negative indexes.
   - substr(start, length): returns a substring starting at start of a specified length.
+
+  - replace(searchValue, replaceValue): Replaces the first instance of searchValue with replaceValue.
+      it can also accept regexp and a callback function maybe.
+  - replaceAll(searchValue, replaceAll): Replaces all instances of searchValue with replaceValue

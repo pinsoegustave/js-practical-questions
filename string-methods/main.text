@@ -4,9 +4,9 @@ About them:
   - length: returns the total numbers of characters in a string starting from 1 and includes space
   - [index]: they are used to access a certain character on the position indicated between brackets
   -  charAt(): also returns the character at the required position. 
-Difference between [] and charAt() in accessing a string on a specified index
-  The String object's charAt() method returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string. while []just returns the letter without minding about single UTF-16 code unit
-  charAt() returns an empty string "" if the index is out of bounds while [] returns undefined. charAt is older and [] is the newest ES5+ 
+      Difference between [] and charAt() in accessing a string on a specified index
+        The String object's charAt() method returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string. while []just returns the letter without minding about single UTF-16 code unit
+        charAt() returns an empty string "" if the index is out of bounds while [] returns undefined. charAt is older and [] is the newest ES5+ 
   - charCodeAt(): Returns the Unicode value of the character at the specified location.
     UpperCase, A - Z: 65 - 90
     LowerCase, a - z: 97 - 122
@@ -14,4 +14,6 @@ Difference between [] and charAt() in accessing a string on a specified index
   - codePointAt(index): Returns the Unicode code point at a given position(useful for emojis and multi-byte characters);
   - concat() and +: joins two strings together;
   - trim(): removes the whitespaces from the given string 
+  - trimStart()=trimLeft(): removes the whitespaces from the beginning of a string
+  - trimEnd()=trimRight(): removes the whitespaces from the beginning of a string
   - 

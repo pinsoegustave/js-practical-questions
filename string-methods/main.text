@@ -20,5 +20,6 @@ About them:
   - padEnd(targetLength, padString): Pads the string from the end until it reaches the target length
   - repeat(count): Repeats the string count times.
 
-  - includes(): checks if the substring exists, starting at the optional index and it returns true or false. 
-  - 
+  - includes(searchValue, start): checks if the substring exists, starting at the optional index and it returns true or false. 
+  - indexOf(searchValue, start): returns the first index of the searchValue, or -1 if not found.
+  -  

@@ -22,4 +22,5 @@ About them:
 
   - includes(searchValue, start): checks if the substring exists, starting at the optional index and it returns true or false. 
   - indexOf(searchValue, start): returns the first index of the searchValue, or -1 if not found.
+  - lastIndexOf(searchValue, start): returns the last index of the searchValue, or -1 if not found.
   -  

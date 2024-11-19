@@ -24,4 +24,6 @@ About them:
   - indexOf(searchValue, start): returns the first index of the searchValue, or -1 if not found.
   - lastIndexOf(searchValue, start): returns the last index of the searchValue, or -1 if not found.
   - startsWith and/or endsWith: checks if the string starts and/or ends with the specified substring.
-  
+  - match(regexp): matches the string against a regex and returns an array, or null if not found. 
+  - matchAll(regexp): returns all matches for a regexp(ES2020);
+  - search(regex); searches for a match and returns the index of the first match.

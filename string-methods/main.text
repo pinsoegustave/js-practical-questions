@@ -18,4 +18,4 @@ About them:
   - trimEnd()=trimRight(): removes the whitespaces from the beginning of a string
   - padStart(targetLenght, padString): Pads the string from the start until it reaches the target length
   - padEnd(targetLength, padString): Pads the string from the end until it reaches the target length
-  
+  - repeat(count): 

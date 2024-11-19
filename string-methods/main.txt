@@ -27,3 +27,7 @@ About them:
   - match(regexp): matches the string against a regex and returns an array, or null if not found. 
   - matchAll(regexp): returns all matches for a regexp(ES2020);
   - search(regex); searches for a match and returns the index of the first match.
+
+  - slice(start, end): Extracts a section of the string and returns it as a new string.
+  - substring(start, end): similar to slice, but doesnot accept negative indexes.
+  - substr(start, length): returns a substring starting at start of a specified length.

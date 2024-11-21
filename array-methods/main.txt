@@ -3,3 +3,40 @@ Arrays are special types of objects used to store multiple values in a single va
 
 Array Creation: By using [] and Array() constructor
 
+Array accessing: by using square brackets [] notation and pass the index. indices start from 0
+
+Array updating: access element with it's index and assign it to the value you need
+
+Array Methods one by one:
+
+- length property: length property of an array returns the number of elements in the array. It is a property that automatically updates whenever elements are added or removed from the array.
+- pop() method: removes the last element from an array and returns that element.
+        It mutates the original array by removing the last elements
+        If the array is empty(length is 0), pop() returns undefined
+- push() method: adds one or more elements to the end of an array and returns the new length of the array.
+        It mutates the original array by adding new elements to the end.
+        The elements are appended in the order they appear in the arguments list.
+- shift() method: removes the first element from an array and returns that element.
+        It mutates the original array
+- unshift() method: adds one or more elements to the beginning of an array and returns the new length of the array
+- splice() method: changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+        It modifies the original array and returns an array containing the removed elements, if any.
+        Syntax: splice(startIndex, deleteCount, item1, item2, ...);
+- indexOf() method: searches the array for the specified element from the beginning to the end. It returns the index of the first occurence of the specified element in the array.
+        If the element is not found it returns -1
+        Syntax: .indexOf()
+- lastIndexOf() method: searches the array for the specified element from the end to the beginning.
+- includes() method: checks whether a specified element is present in the array.
+        It returns true if the specified element is found in the array, and false otherwise.
+        Syntax: includes(searchElement, fromIndex)
+- concat() method: is used to merge two or more arrays, creating a new array that contains the elements of the original arrays.
+        It doesnot modify the existing arrays but instead returns a new array with the combined elements.
+- reverse() method: is used to reverse the order of the elements in an array.
+        It modifies the original array in place and returns the reversed array, with the elements in the opposite order.
+- slice() method: is used to extract a portion of an array into a new array, without modifying the original array.
+        It takes two optional parameters: start and end which specify the beginning and end of the slice, respectively.
+        It returns a new array which containing the extracted elements.
+        The original array remains unchangend.
+- sort() method: sorts the elements of an array in place and returns the sorted array.
+        It modifies the original array and doesnot create a new array.
+- flat() method: creates a new array with all sub-array elements concatenated into it.

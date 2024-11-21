@@ -1,0 +1,5 @@
+Array Methods Revision:
+Arrays are special types of objects used to store multiple values in a single variable.
+
+Array Creation: By using [] and Array() constructor
+

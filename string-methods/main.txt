@@ -38,3 +38,8 @@ About them:
 
   -split(): splits the string into an array of substrings.
   -join(); joins elements of an array into a string (technically it is an array method);
+
+  -string.raw(): enables us to access the raw string from a template literal where the escape characters are not processed.
+      they are mainly used in accessing Unicode characters: String.raw`\u206`
+      example: String.raw(`Monday\nTuesday\nWednesday`);
+      performing operations: String.raw(`Sum: ${4+5}`)

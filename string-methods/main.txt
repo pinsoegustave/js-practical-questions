@@ -35,3 +35,6 @@ About them:
   - replace(searchValue, replaceValue): Replaces the first instance of searchValue with replaceValue.
       it can also accept regexp and a callback function maybe.
   - replaceAll(searchValue, replaceAll): Replaces all instances of searchValue with replaceValue
+
+  -split(): splits the string into an array of substrings.
+  -join(); joins elements of an array into a string (technically it is an array method);

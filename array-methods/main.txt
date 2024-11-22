@@ -40,3 +40,18 @@ Array Methods one by one:
 - sort() method: sorts the elements of an array in place and returns the sorted array.
         It modifies the original array and doesnot create a new array.
 - flat() method: creates a new array with all sub-array elements concatenated into it.
+- toString(): converts an array to a string representation.
+- join() method: joins all elements of an array into a single string.
+        It returns a string representing the joined array elements
+- spread operator: It is a feature introduced in ES6 that allows an iterable like an array, to be expanded into individual elements. The spread operator can be used for various operations, including 
+        - Creating shallow copies of arrays, 
+        - concatenating arrays, and 
+        - passing array elements as arguments to functions.
+        - can be used to add new elements to an array, either at the beginning or at the end.
+        - BONUS: Can be used to find the Max or Min number in an array.
+ - destructuring: It is a feature introduced in ES6 that allows you to extract values from an array and assign them to variables in a concise and readable way.
+        - It provides a convenient syntax for unpacking array elements into separate variables.
+        - It uses [] to indicate that the values come from the array.
+        - You can skip elements in an array by omitting the corresponding variable name in the destructuring assignment.
+        - The rest syntax(...) can be used to hold the remaining elements of an array into a single variable.
+        - You can provide default valus for variables in case the corresponding array element is undefined.

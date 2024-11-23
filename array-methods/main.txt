@@ -74,3 +74,8 @@ Array Iteration
 - every() method: tests whether all elements in the array pass the test implemented by the provided function.
         It returns true if all elements satisfy the testing function, otherwise false.
         It doesn't change the original function.
+- find() method: returns the value of the first element in the array that satisfies the provided testing function.
+        It searches the array from left to right, and once an element passes the test, it stops searching and returns that element's value.
+        It doesnot change the original array.
+        It returns the value of the first element of the array that satisfies the testing function. If no, returns undefined.
+

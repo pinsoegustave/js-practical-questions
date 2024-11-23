@@ -9,3 +9,7 @@ colors.forEach((element) => {
 //filter: returns a new array with the elements that pass the condition
 const evenNumbers = numbers.filter((num) => num % 2 === 0);
 console.log(evenNumbers); 
+
+//map: returns a new array after applying the test to each element of an array
+const getDoubled = numbers.map((num) => num * 3);
+console.log(getDoubled);

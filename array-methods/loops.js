@@ -23,3 +23,7 @@ console.log(result2);  // 362880
 //some: returns true of one element satisfies the function 
 const hasEven = numbers.some((num) => num % 2 === 0);
 console.log(hasEven);  //returns true
+
+//every: returns true if all elements in the array satisfy the function.
+const allEven = numbers.every((num) => num % 2 === 0);
+console.log(allEven);  // returns false;

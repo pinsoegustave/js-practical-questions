@@ -59,3 +59,6 @@ Array Iteration
 - for loop: 
 - for of:
 - forEach() method: is a built-in array method that executes a provided function once for each array element.
+- filter() method: creates a new array with all elements that pass the test implementated by the provided function.
+        It returns a new array containing only the elements of the original array that satisfy the condition specified in the callback function.
+        It returns a neww array with the same length as the original array, where each element is the result of applying the provided function to the corresponding element of the original array.

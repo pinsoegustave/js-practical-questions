@@ -65,4 +65,7 @@ Array Iteration
 - map() method: creates a new array by applying a function to each element of the original array.
         It doesnot change the original array.
         It returns a new array with the same length as the original array, where each element is the result of applying the provided function to the corresponding element of the original array.
+- reduce() method: applies a function against an accumulator and each element in the array to reduce it to a single value.
+        It returns a single value that is the result of applying the provided function to each element in the array.
+        It doesn't change the original array.
         

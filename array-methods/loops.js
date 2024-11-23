@@ -13,3 +13,9 @@ console.log(evenNumbers);
 //map: returns a new array after applying the test to each element of an array
 const getDoubled = numbers.map((num) => num * 3);
 console.log(getDoubled);
+
+//reduce: returns a single value after applying the function to each element
+const result = numbers.reduce((acc, num) => acc + num, 0);
+console.log(result);
+const result2 = numbers.reduce((acc, num) => acc * num, 1);
+console.log(result2);

@@ -55,3 +55,7 @@ Array Methods one by one:
         - You can skip elements in an array by omitting the corresponding variable name in the destructuring assignment.
         - The rest syntax(...) can be used to hold the remaining elements of an array into a single variable.
         - You can provide default valus for variables in case the corresponding array element is undefined.
+Array Iteration
+- for loop: 
+- for of:
+- forEach() method: is a built-in array method that executes a provided function once for each array element.

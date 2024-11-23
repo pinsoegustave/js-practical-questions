@@ -16,6 +16,10 @@ console.log(getDoubled);
 
 //reduce: returns a single value after applying the function to each element
 const result = numbers.reduce((acc, num) => acc + num, 0);
-console.log(result);
+console.log(result);  // 45
 const result2 = numbers.reduce((acc, num) => acc * num, 1);
-console.log(result2);
+console.log(result2);  // 362880
+
+//some: returns true of one element satisfies the function 
+const hasEven = numbers.some((num) => num % 2 === 0);
+console.log(hasEven);  //returns true

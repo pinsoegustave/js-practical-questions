@@ -79,3 +79,7 @@ Array Iteration
         It doesnot change the original array.
         It returns the value of the first element of the array that satisfies the testing function. If no, returns undefined.
 - findIndex() method: returns the index of the first element in the array that satisfies the provided testing function.
+Additionals:
+
+- fill() method: changes the array elements with the specified value.
+        Syntax: fill(), fill(valueToBe, startIndex, endIndex)

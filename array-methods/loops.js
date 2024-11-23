@@ -28,6 +28,10 @@ console.log(hasEven);  //returns true
 const allEven = numbers.every((num) => num % 2 === 0);
 console.log(allEven);  // returns false;
 
-//finc: returns the value of the first element that satisfy the testing function
+//find: returns the value of the first element that satisfy the testing function
 const found = numbers.find((num) => num > 4);
 console.log(found); //returns 5 only;
+
+//findIndex: returns the index's value of the first element that satisfy the testing function
+const index = numbers.findIndex((num) => num > 5);
+console.log(index);  //returns 5

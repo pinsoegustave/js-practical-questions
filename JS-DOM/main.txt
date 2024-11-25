@@ -1,0 +1,29 @@
+JavaScript and the DOM
+DOM: stands for Document Object Model
+
+Definition of DOM: DOM is a programming interface that allows web developers to interact with web pages dynamically.
+
+The web browser uses DOM to represent the HTML document internally. Additionally, it provides a set of functions and methods to modify the HTML document programmatically. These functions and methods are often called DOM API.
+Role of DOM in web development.
+ - Represents a document 
+The DOM represents a document structure in memory as a logical tree, with nodes at the end of each branch.
+ - Connects web pages to scripts
+The DOM allows web pages to be connected to scripts or programming languages like JavaScript
+ - Enables dynamic interactions
+The DOM allows developers to manipulate the structure, content, and the style of a web page scripts.
+ - Creates interactive experiences
+The DOM enables dynamic, interactive web experiences.
+
+ - Change the document's structure: Use DOM methods to change document's structure, style, or content.
+ - Attach event handlers: Attach event handlers to nodes so that they are executed when an event is triggered.
+ - Use DOM methods: Use DOM methods like querySelector, querySelectorAll, getElementBysId, getElementsByClassName to select elements.
+
+Structure of DOM
+DOM can be thought of as a Tree or Forest(more than one tree). The term structure model is sometimes used to describe the tree-like representation of a document.
+
+Each branch of the tree ends in a node, and each node contains objects. Event listeners can be added to nodes and the tree-like representation of a document.
+
+One important property of DOM structure is structural isomorphism: if any two DOM implementations are used to create the same document, they will create the same structural model, with precisely the same objects and relationships.
+
+Why DOM is called an Object Model? 
+Documents are modeled using objects, and the model includes not only the structure of a document but also the behavior of a document and the objects of which it is composed like tag elements with attributes in HTML.

@@ -27,3 +27,19 @@ One important property of DOM structure is structural isomorphism: if any two DO
 
 Why DOM is called an Object Model? 
 Documents are modeled using objects, and the model includes not only the structure of a document but also the behavior of a document and the objects of which it is composed like tag elements with attributes in HTML.
+
+Properties of DOM
+Window Object: Window object is object of the browser which is always at top of the hierarchy. It is like an API that is used to set and access all the properties and methods of the browser.It is automatically created by the browser.
+Document object: It is property of window object.
+Form object: It is represented by form tags.
+link objects: It is represented by link tags.
+Anchor objects: It is represented by 'href' tags.
+Form control elements: Form can have many control elements such as textfields, buttons, radio buttons, checkboxes, etc. 
+
+Nodes in DOM (Interesting).
+In DOM, nodes are the individual elements, attributes, and text that make up an HTML document.
+    - Document Node: The top-level node that represents the entire HTML document.
+    - Element node: Represents an HTML elements, such as <div></div>,<p></p>, or <ul></ul>
+    - Attribute node: Represents an attribute of an HTML element, such as id, class, or src 
+    - Text Node: Represents the actual text within an HTML document 
+    - Comment Node: Represents an HTML comment.

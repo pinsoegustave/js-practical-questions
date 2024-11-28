@@ -34,12 +34,31 @@
         // }
         let prevSibling = current.previousElementSibling;
         console.log(prevSibling);
-
+// to get all the previous siblings
         // while(prevSibling) {
         //     console.log(prevSibling);
         //     prevSibling = current.previousElementSibling;
         // }
 
+        let getSiblings = function (e) {
+            let siblings = [];
+            if (!e.parentNode) {
+                return siblings;
+            } 
+
+            let sibling = e.parentNode.firstChild;
+            while (sibling) {
+                if (sibling.nodeType === 1 && sibling !== e) {
+                    siblings.push(sibling);
+                }
+                sibling = sibling.nextSibling;
+            }
+            return siblings;
+        };
+
+        let siblings = getSiblings(document.querySelector('.current'));
+        siblingText = siblings.map(e => e.innerHTML);
+        console.log(siblingText); 
     </script>
 
 </body>

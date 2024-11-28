@@ -12,15 +12,20 @@
         <p class="note">This is a note!</p>
     </div>
     <ul id="menu">
-        <li>Home</li>
+        <li class="first">Home</li>
         <li>Products</li>
         <li class="current">Customer Support</li>
         <li>Careers</li>
         <li>Investors</li>
         <li>News</li>
-        <li>About Us</li>
+        <li class="last">About Us</li>
     </ul>
+
     <script>
+        let content = document.getElementById('menu');
+        let firstChild = content.firstChild.nodeName;
+        console.log(firstChild);
+
         let note = document.querySelector('.note');
         console.log(note.parentNode);
         

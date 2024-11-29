@@ -20,8 +20,25 @@
         <li>News</li>
         <li class="last">About Us</li>
     </ul>
+    <ul id="list">
+        <li>First (1)</li>
+        <li>Second (2)</li>
+        <li>Third (3)</li>
+      </ul>
+      
+      <script>
+        const list = document.getElementById("list");
+        console.log(list.firstElementChild.textContent);
+        console.log(list.firstChild);
+        // logs "First (1)"
+      </script>
 
-    <script>
+    <!-- <script>
+        let menu = document.getElementById('menu');
+        console.log(menu.lastChild);
+        console.log(menu.lastElementChild);
+
+
         let content = document.getElementById('menu');
         let firstChild = content.firstChild.nodeName;
         console.log(firstChild);
@@ -64,7 +81,7 @@
         let siblings = getSiblings(document.querySelector('.current'));
         siblingText = siblings.map(e => e.innerHTML);
         console.log(siblingText); 
-    </script>
+    </script> -->
 
 </body>
 </html>

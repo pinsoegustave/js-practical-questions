@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-DOM: Mini-project</title>
+</head>
+<body>
+    <div class="header">
+        <div class="list">
+            <ul id="navbar">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Projects</li>
+                <li>Contact us</li>
+                <li>Help</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Script -->
+    <script>
+        let getChildren = document.getElementById('navbar');
+        let allChildren = getChildren.children;
+        console.log(allChildren);   
+    </script>
+</body>
+</html>

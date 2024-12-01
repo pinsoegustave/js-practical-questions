@@ -34,6 +34,12 @@
         let lastElementChil = getLastChild.lastElementChild;
         console.log(lastChild);
         console.log(lastElementChil);
+
+        let getSiblings = document.getElementById('navbar');
+        let previous = getSiblings.previousSibling;
+        let next = getSiblings.nextSibling;
+        console.log(previous);
+        console.log(next.textContent);
     </script>
 </body>
 </html>

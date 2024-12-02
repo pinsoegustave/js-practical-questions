@@ -38,6 +38,11 @@
         
         elem.removeAttribute('data-chips');
 
+        if (elem.hasAttribute('data-drink')) {
+            console.log('Add a drink!');
+        }
+        elem.toggleAttribute('data-gustave');
+
         let getChildren = document.getElementById('navbar');
         let allChildren = getChildren.children;
         console.log(allChildren);   

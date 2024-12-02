@@ -11,6 +11,10 @@
             Hello this is <span>Tharun </span>How are you?
         <br>
     </p>
+
+    <p class="" id="lunch" data-sandwich="tuna" data-chips="Cape Cod" data-drink="soda">Lunch Order</p>
+
+
     <div class="header">
         <div class="list">
             <ul id="navbar">
@@ -19,11 +23,19 @@
                 <li>Projects</li>
                 <li>Contact us</li>
                 <li>Help</li>
+                <li>Chat with us</li>
             </ul>
         </div>
     </div>
     <!-- Script -->
     <script>
+        let elem = document.querySelector('#lunch');
+
+        let sandwich = elem.getAttribute('data-sandwich');
+        console.log(sandwich);
+
+        elem.setAttribute('data-sandwich', 'turkey'); 
+
         let getChildren = document.getElementById('navbar');
         let allChildren = getChildren.children;
         console.log(allChildren);   

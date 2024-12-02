@@ -34,7 +34,9 @@
         let sandwich = elem.getAttribute('data-sandwich');
         console.log(sandwich);
 
-        elem.setAttribute('data-sandwich', 'turkey'); 
+        elem.setAttribute('data-sandwich', 'turkey');
+        
+        elem.removeAttribute('data-chips');
 
         let getChildren = document.getElementById('navbar');
         let allChildren = getChildren.children;

@@ -39,10 +39,13 @@
         // logs "First (1)"
       </script> -->
 
-    <!-- <script>
+    <script>
         let menu = document.getElementById('menu');
         console.log(menu.lastChild);
         console.log(menu.lastElementChild);
+
+        let children = menu.children;
+        console.log(children);
 
 
         let content = document.getElementById('menu');
@@ -87,7 +90,7 @@
         let siblings = getSiblings(document.querySelector('.current'));
         siblingText = siblings.map(e => e.innerHTML);
         console.log(siblingText); 
-    </script> -->
+    </script>
 
 </body>
 </html>

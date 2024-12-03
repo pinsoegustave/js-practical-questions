@@ -1,3 +1,5 @@
+Github repo: git pull https://github.com/pinsoegustave/js-practical-questions.git
+
 JavaScript and the DOM
 DOM: stands for Document Object Model
 

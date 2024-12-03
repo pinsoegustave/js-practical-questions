@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-DOM: Creating and Removing Elements</title>
+</head>
+<body>
+    <h1>This is the very beginnning of Day 2 lesson.</h1>
+
+    <main id="main-heading">Our Products</main>
+    <span id="other-heading">Selling Products</span>
+
+    <script>
+        const mainHeading = document.querySelector('#main-heading');
+        const otherHeading = document.querySelector('#other-heading');
+        const exitedText = document.createElement('span');
+
+        exitedText.textContent = '!!!!!!!'
+        mainHeading.appendChild(exitedText);
+        otherHeading.appendChild(exitedText);
+
+        // const myPara = document.createElement('p');
+        // const myParag = document.createElement('span');
+
+        // const textOfParagraph = document.createTextNode('I am the text writer of today!');
+
+        // myParag.textContent = "I am using the easiest way to access"
+
+        // myPara.appendChild(textOfParagraph);
+        // document.body.appendChild(myPara);
+        // document.body.appendChild(myParag);
+    </script>
+</body>
+</html>

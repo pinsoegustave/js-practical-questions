@@ -15,18 +15,32 @@
         <span id="childElement">foo bar</span>
     </div>
 
+    <div >
+        <span id="childSpan">Formidable</span>
+    </div>
+
     <script>
-        const newNode = document.createElement("span");
-        const parentDiv = document.getElementById("childElement").parentNode;
+        const sp1 = document.createElement("span");
+        sp1.id = "newSpan";
+        const sp1_content = document.createTextNode("new replacement span element!!");
 
-        let sp2 = document.getElementById('childElement');
-        parentDiv.insertBefore(newNode, sp2);
+        sp1.appendChild(sp1_content);
 
-        sp2 = undefined;
-        parentDiv.insertBefore(newNode, sp2);
+        const sp2 = document.getElementById("childSpan");
+        const parentDiv = sp2.parentNode;
 
-        sp2 = "undefined";
-        parentDiv.insertBefore(newNode, sp2);
+        parentDiv.replaceChild(sp1, sp2);
+        // const newNode = document.createElement("span");
+        // const parentDiv = document.getElementById("childElement").parentNode;
+
+        // let sp2 = document.getElementById('childElement');
+        // parentDiv.insertBefore(newNode, sp2);
+
+        // sp2 = undefined;
+        // parentDiv.insertBefore(newNode, sp2);
+
+        // sp2 = "undefined";
+        // parentDiv.insertBefore(newNode, sp2);
         // const mainHeading = document.querySelector('#main-heading');
         // const htmlTextToAdd = '<h2>Skydiving is fun!</h2>';
 

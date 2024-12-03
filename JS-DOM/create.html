@@ -13,12 +13,16 @@
 
     <script>
         const mainHeading = document.querySelector('#main-heading');
-        const otherHeading = document.querySelector('#other-heading');
-        const exitedText = document.createElement('span');
+        const htmlTextToAdd = '<h2>Skydiving is fun!</h2>';
 
-        exitedText.textContent = '!!!!!!!'
-        mainHeading.appendChild(exitedText);
-        otherHeading.appendChild(exitedText);
+        mainHeading.insertAdjacentHTML('afterend', htmlTextToAdd);
+        // const mainHeading = document.querySelector('#main-heading');
+        // const otherHeading = document.querySelector('#other-heading');
+        // const exitedText = document.createElement('span');
+
+        // exitedText.textContent = '!!!!!!!'
+        // mainHeading.appendChild(exitedText);
+        // otherHeading.appendChild(exitedText);
 
         // const myPara = document.createElement('p');
         // const myParag = document.createElement('span');

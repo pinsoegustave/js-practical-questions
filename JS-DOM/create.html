@@ -11,11 +11,27 @@
     <main id="main-heading">Our Products</main>
     <span id="other-heading">Selling Products</span>
 
-    <script>
-        const mainHeading = document.querySelector('#main-heading');
-        const htmlTextToAdd = '<h2>Skydiving is fun!</h2>';
+    <div id="parenrtElement">
+        <span id="childElement">foo bar</span>
+    </div>
 
-        mainHeading.insertAdjacentHTML('afterend', htmlTextToAdd);
+    <script>
+        const newNode = document.createElement("span");
+        const parentDiv = document.getElementById("childElement").parentNode;
+
+        let sp2 = document.getElementById('childElement');
+        parentDiv.insertBefore(newNode, sp2);
+
+        sp2 = undefined;
+        parentDiv.insertBefore(newNode, sp2);
+
+        sp2 = "undefined";
+        parentDiv.insertBefore(newNode, sp2);
+        // const mainHeading = document.querySelector('#main-heading');
+        // const htmlTextToAdd = '<h2>Skydiving is fun!</h2>';
+
+        // mainHeading.insertAdjacentHTML('afterend', htmlTextToAdd);
+
         // const mainHeading = document.querySelector('#main-heading');
         // const otherHeading = document.querySelector('#other-heading');
         // const exitedText = document.createElement('span');

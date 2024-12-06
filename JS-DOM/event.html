@@ -8,6 +8,16 @@
 <body>
     <h1 style="font-size: 80px; background-color: blue;"><b>Welcome on the web</b></h1>
 
+    <div id="contain-all">
+        <ul style="font-size: 80px;">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Projects</li>
+        </ul>
+        <section>
+            All frequent questions.
+        </section>
+    </div>
     <script>
         const mainHeading = document.querySelector('h1');
 
@@ -19,7 +29,14 @@
 
         document.removeEventListener('click', function myEventListeningFunction() {
             console.log('Gustave');
-        })
+        });
+
+        document.body.addEventListener('keypress', function () {
+            console.log('removing the first child');
+
+            document.querySelector('#contain-all').firstElementChild.remove();
+        });
+
     </script>
 
 </body>

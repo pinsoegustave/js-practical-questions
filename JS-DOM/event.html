@@ -12,6 +12,14 @@
         const mainHeading = document.querySelector('h1');
 
         mainHeading.style.backgroundColor = "green";
+
+        document.addEventListener('click', function myEventListeningFunction() {
+            console.log('howdy');
+        })
+
+        document.removeEventListener('click', function myEventListeningFunction() {
+            console.log('Gustave');
+        })
     </script>
 
 </body>

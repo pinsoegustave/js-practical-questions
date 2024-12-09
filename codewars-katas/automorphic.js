@@ -3,4 +3,4 @@ function automorphic(n){
 
     return squareNum.toString().endsWith(n) ? 'Automorpic' : 'Not!!'
 }
-console.log(automorphic(225));
+console.log(automorphic(225));      

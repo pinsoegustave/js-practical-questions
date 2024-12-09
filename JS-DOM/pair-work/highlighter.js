@@ -2,7 +2,40 @@ let paragraph = document.querySelector("#myParagraph").textContent
 console.log(paragraph);
 
 const parag = paragraph.split(' ')
+
+function word(){
+    const obj ={}
+    parag.forEach(item =>{
+        item in obj? obj[item] ++ : obj[item] = 1;
+    })
+    console.log(obj);
+    const hi = Object.entries(obj);
+    console.log(hi);
+    const sorted = hi.sort((a,b) => b[1]-a[1]);
+}word();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 console.log(parag);
+console.log(parag[1]);
 
 let sameWords = parag.filter((ele, i) => ele !== '' && parag.indexOf(ele) !== i);
 console.log(sameWords);
@@ -51,3 +84,14 @@ console.log(arranged);
 const solution = arranged.slice(0, 5);
 console.log(solution);
 
+function highlight() {
+    const everyWord = parag.map((ele) => {
+        if(goodArray.includes(ele)){
+            return `<span style="background-color:yellow">${ele}</span>`
+        }
+        return ele
+    })
+    console.log(everyWord)
+    document.querySelector("#myParagraph").innerHTML = everyWord.join(' ')
+}
+highlight()

@@ -8,3 +8,8 @@
     align-items: center;
     text-align: center;
 }
+
+#myButton {
+    margin-top: 20px;
+    font-size: 25px;
+}

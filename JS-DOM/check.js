@@ -2,11 +2,11 @@
                 // e.g: click, mouseover, mouseout.
 
 const myBox = document.getElementById('myBox');
+const myButton = document.getElementById('myButton');
 
-
-myBox.addEventListener("click", event => {
-    event.target.style.backgroundColor = "red";
-    event.target.innerHTML = `<p>Ngo gate ark?</p>`
+myButton.addEventListener("click", event => {
+    myBox.target.style.backgroundColor = "red";
+    myBox.target.innerHTML = `<p>Ngo gate ark?</p>`
 });
 
 myBox.addEventListener("mouseover", event => {
@@ -14,7 +14,7 @@ myBox.addEventListener("mouseover", event => {
     event.target.textContent = "Don't do it🔕"
 })
 
-myBox.addEventListener("mouseout", event => {
-    event.target.style.backgroundColor = "lightgreen";
-    event.target.textContent = "Click Me🔇"
+myButton.addEventListener("mouseout", event => {
+    myBox.target.style.backgroundColor = "lightgreen";
+    myBox.target.textContent = "Click Me🔇"
 })

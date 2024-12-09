@@ -44,14 +44,10 @@ console.log(String(answer5));
 
 const goodArray = [];
 let goods = goodArray.push(String(answer1),String(answer2),String(answer3),String(answer4),String(answer5));
-// goodArray.push(String(answer1));
-// goodArray.push(answer2);
-// goodArray.push(answer3);
-// goodArray.push(answer4);
-// goodArray.push(answer5);
 console.log(goodArray);
 
 const arranged = result.sort((a, b) => b - a);
 console.log(arranged);
 const solution = arranged.slice(0, 5);
 console.log(solution);
+

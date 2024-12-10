@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What is Event Delegation?</h1>
+
+    <p>A way you can use an event listener once for multiple elements with support for adding extra children.</p>
+
+    <ul id="myList">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Tomato</li>
+    </ul>
+
+    <script>
+        const myList = document.getElementById('myList');
+
+        myList.addEventListener("click", function (e){
+            const target = e.target;
+
+            if(target.matches("li")) {
+                //do something
+                target.style.backgroundColor = "red";
+            }
+        });
+
+        newLi = document.createElement("li");
+        newLi.textContent = "dcode"
+        myList.appendChild(newLi);
+    </script>
+</body>
+</html>

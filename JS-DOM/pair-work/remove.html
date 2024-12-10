@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="pane">
+            <h2>Leopard</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum aspernatur similique, adipisci modi quia at reprehenderit reiciendis doloribus vero itaque nihil, voluptatibus laborum officia ducimus? At ipsam ab debitis fugit.</p>
+            <button id="remove-button-1">Remove[x]</button>
+        </div>
+        <div class="pane">
+            <h2>Horse</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum aspernatur similique, adipisci modi quia at reprehenderit reiciendis doloribus vero itaque nihil, voluptatibus laborum officia ducimus? At ipsam ab debitis fugit.</p>
+            <button id="remove-button-2">Remove[x]</button>
+        </div>
+        <div class="pane">
+            <h2>Kasongo yeye</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum aspernatur similique, adipisci modi quia at reprehenderit reiciendis doloribus vero itaque nihil, voluptatibus laborum officia ducimus? At ipsam ab debitis fugit.</p>
+            <button id="remove-button-3">Remove[x]</button>
+        </div>
+        <div class="pane">
+            <h2>Lion King</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum aspernatur similique, adipisci modi quia at reprehenderit reiciendis doloribus vero itaque nihil, voluptatibus laborum officia ducimus? At ipsam ab debitis fugit.</p>
+            <button id="remove-button-4">Remove[x]</button>
+        </div>
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+
+        container.addEventListener("click", (event) => {
+            // console.log(event);
+            if (event.target.tagName === "BUTTON") {
+                let buttonId = event.target.id;
+                const parentDiv = event.target.closest('.pane');
+                switch(buttonId) {
+                    case "remove-button-1":
+                        parentDiv.remove();
+                    break;
+                    case 'remove-button-2':
+                        parentDiv.remove();
+                    break;
+                    case 'remove-button-3':
+                        parentDiv.remove();
+                    break;
+                    case 'remove-button-4':
+                        parentDiv.remove();
+                }
+
+            }
+        })
+    </script>
+</body>
+</html>

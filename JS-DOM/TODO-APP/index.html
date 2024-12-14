@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS-DOM: TODO App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <center>
+
+
+   
     <div class="container">
-        <div id="inputs">
-            <form action="">
-                <input type="text" name="task" id="" placeholder="Enter your task here">
-                <input type="submit" value="Add Task">
-            </form>
-        </div>
-        <div class="lists">
-            <ul>
-                <li>
-                    <span>Driving</span>
-                    <span>Mark complete</span>
-                    <span>Delete</span>
-                </li>
-                <li>
-                    <span>Coding</span>
-                    <span>Mark complete</span>
-                    <span>Delete</span>
-                </li>
-            </ul>
-        </div>
+        <h2>TODO List App</h2>
+        <form id="add-form">
+            <input type="text" name="task" placeholder="Enter your task here">
+            <input type="submit" value="Add Task">
+        </form>
+        <ul id="tasks">
+            <li>
+                <span>Mark completed</span>
+                <span>Driving</span>
+                <span class="delete">Delete</span>
+            </li>
+            <li>
+                <span>Mark completed</span>
+                <span>Coding</span>
+                <span class="delete">Delete</span>
+            </li>
+            <li>
+                <span>Mark completed</span>
+                <span>Playing</span>
+                <span class="delete">Delete</span>
+            </li>
+        </ul>
     </div>
+</center>
+
+<script src="main.js"></script>
 </body>
 </html>

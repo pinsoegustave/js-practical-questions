@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Testing the setTimeout() HOF</h1>
+
+    <script>
+        let count = 0;
+        function generateParagraphs() {
+            const fragment = document.createDocumentFragment();
+
+            for(let i = 1; i <= 200; i++) {
+                const newElement = document.createElement('p');
+
+                newElement.textContent = "This is a paragraph number " +count;
+                count++;
+
+                fragment.appendChild(newElement);
+            }
+            document.body.appendChild(fragment);
+
+            if(count < 5000) {
+                setTimeout(generateParagraphs, 0);
+            }
+        }
+
+        generateParagraphs();
+    </script>
+</body>
+</html>

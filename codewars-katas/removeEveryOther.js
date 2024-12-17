@@ -1,7 +1,7 @@
 function removeEveryOther(arr){
     //your code here
-    arr.splice(1, 1);
-    return arr;
+    
+    return arr.filter((_, index) => index % 2 ===0);
 
 }
 console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));

@@ -12,4 +12,5 @@ const findTheSquares = num => {
         }
     }
 }
-console.log(findTheSquares(9));
+console.log(findTheSquares(9)); //'25-16'
+console.log(findTheSquares(7)); //16-9'

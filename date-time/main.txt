@@ -6,3 +6,5 @@ In JavaScript, date and time are represented by Date() object. It also provides 
 - new Date(milliseconds)
 - new Date(Date String)
 - new Date(year, month, day, hours, minutes, seconds, milliseconds);
+
+Date formats are: short date format and long date format

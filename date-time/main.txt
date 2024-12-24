@@ -35,3 +35,19 @@ setDate()	Sets the day of the month according to local time
 setUTCDate()	Sets the day of the month according to universal time
 
 getMonth() and getUTCMonth() may produce different result due to DST(Daylight Savind Time) which is a practice that involves moving clocks forward by one hour in the spring or late winter, and then moving them back by one hour in the fall.
+
+AutoCorrection in Date Object
+When you assign out of range values in the Date object, it auto-corrects itself. For example,
+
+const date = new Date(2008, 0, 33);
+// Jan does not have 33 days
+
+console.log(date);
+Run Code
+Output
+
+Sat Feb 02 2008
+
+Resources: 
+- https://www.toptal.com/software/definitive-guide-to-datetime-manipulation
+- https://www.programiz.com/javascript/date-time

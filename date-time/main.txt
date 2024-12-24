@@ -8,3 +8,11 @@ In JavaScript, date and time are represented by Date() object. It also provides 
 - new Date(year, month, day, hours, minutes, seconds, milliseconds);
 
 Date formats are: short date format and long date format
+
+If four numbers are passed, it represents year, month, day and hours. For example,
+similary, if two arguments are passed, it represents year and month
+```bash
+Note: If you pass only one argument, it is treated as milliseconds. Hence, you have to pass two arguments to use this date format.
+
+In JavaScript, months are counted from 0 to 11. January is 0 and December is 11.
+```

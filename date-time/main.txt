@@ -1,0 +1,8 @@
+## JavaScript Date and Time
+In JavaScript, date and time are represented by Date() object. It also provides various methods.
+
+#### Four ways to create a Date object.
+- new Date
+- new Date(milliseconds)
+- new Date(Date String)
+- new Date(year, month, day, hours, minutes, seconds, milliseconds);

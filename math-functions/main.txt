@@ -1,0 +1,21 @@
+### JavaScript Math Functions
+
+Math() object contains static properties and methods for mathematical constants and Functions.
+Math() works with Number type. It doesn't work work with BigInt
+Math() object, unlike most global objects, it is not a constructor. You cannot use the new operator or invoke it as a function. All properties and methods of Math are static. 
+
+Numbers can be positive or negative integers while integers are floating-point values in JavaScript. Integer values will be accurate up to 15digits in JavaScript.
+
+Math() Static properties 
+Math.E
+Math.LN10
+Math.LN2
+Math.LOG1010E
+Math.LOG2E
+Math.PI
+Math.SQRT1_2
+Math.SQRT2
+
+Math() Static methods
+Math.abs, Math.acos, Math.acosh, Math.asin, Math.asinh, Math.atan, Math.atan2, Math.atanh, Math.cbrt, Math.ceil(), .....
+

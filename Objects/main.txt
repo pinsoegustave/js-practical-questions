@@ -19,6 +19,9 @@ Object.create(): creates a new object with the specified prototype object and pr
 Object.defineOwnProperties(): Adds the named properties described by the given descriptor to an object.
 Object.defineProperty(): adds the named property described by the given descriptor to an object.
 Object.entries(): Returns an array containing all the [key, value] pairs of a given object's own enumerable string properties.
+- Used on primitives
+- Converting an Object to a Map
+- Iterating through an object
 Object.freeze(): freezes an object. Other codes cannot delete or change its properties.
 Object.fromEntries(): returns a new object from an iterable of [key, value] pairs. (This is the reverse of Object.entries()).
 Object.hasOwnPropertyDescriptor(): returns a property descriptor for a named property on an object.

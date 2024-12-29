@@ -1,0 +1,8 @@
+## Understanding JavaScript's `this` keyword in depth.
+
+### this in the global context
+Whenever `this` is outside any function it is a global object in the global context.
+
+`this` is also a global object at the top level of a node. It is true only in a node repo
+
+`this` on a normal top level of node module it is equal to module.exports 

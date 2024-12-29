@@ -6,3 +6,12 @@ Whenever `this` is outside any function it is a global object in the global cont
 `this` is also a global object at the top level of a node. It is true only in a node repo
 
 `this` on a normal top level of node module it is equal to module.exports 
+
+### this in Function calls
+the value of `this` in function is determined by how the function is called. This means it may return different values depending on how the function in invoked
+
+when using plain function call and in strict mode, `this` is set to undefined
+
+when not in strict mode, `this` inside a function is a global object. It returns undefined
+
+"strict mode" prevents us to create global variables. And when we need the values in strict mode we add new operator to the constructor of the function. 

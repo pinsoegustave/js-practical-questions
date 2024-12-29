@@ -1,5 +1,2 @@
-function withIn(c) {
-    return String(c).includes(4);
-}
+// Write a function to return if the number given has a 4
 
-console.log(withIn(2432));

@@ -5,3 +5,5 @@ const object = {
 }
 
 console.log(Object.keys(object));
+
+console.log(Object.values(object));

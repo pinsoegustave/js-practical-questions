@@ -20,3 +20,11 @@ when not in strict mode, `this` inside a function is a global object. It returns
 when calling a function with new operator it becomes a constructor. Using `this` on a constructor it automatically creates an object.
 
 using return in constructor function, we can overwrite the entire object, because the first is out of scope and no one still has its reference. 
+
+### this in Method calls
+a method: is a function as a property in an object.
+a receiver: is an immediate property before the method.
+
+⚠️Declaring a variable to store our method call, the receiver will loose it's global object and will return undefined.
+
+We also loose our receiver when we pass it as a callback function.

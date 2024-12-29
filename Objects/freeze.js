@@ -20,7 +20,7 @@ obj.foo = "quux"
 obj.quaxxor = "the friendly duck";
 
 function fail() {
-    "use strict"
+    // "use strict"
     obj.foo = "sparky";
     delete obj.foo;
     delete obj.quaxxor;

@@ -14,4 +14,9 @@ when using plain function call and in strict mode, `this` is set to undefined
 
 when not in strict mode, `this` inside a function is a global object. It returns undefined
 
-"strict mode" prevents us to create global variables. And when we need the values in strict mode we add new operator to the constructor of the function. 
+"strict mode" prevents us to create global variables. And when we need the values in strict mode we add new operator to the constructor of the function.
+
+### this in Constructor calls
+when calling a function with new operator it becomes a constructor. Using `this` on a constructor it automatically creates an object.
+
+using return in constructor function, we can overwrite the entire object, because the first is out of scope and no one still has its reference. 

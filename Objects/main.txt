@@ -38,9 +38,17 @@ Object.is(): Compares if two values are the same value. Equates all NaN values(w
 Object.isExtensible(): Determines if expending of an object is allowed.
 Object.isFrozen(): Determines if an object was frozen.
 Object.isSealed(): Determines if an object is sealed.
+
 Object.keys(): Returns an array containing the names of all of the given object's own enumrable string properties.
 Object.preventExtensions(): prevents any extensions of an object.
 Object.seal(): Prevents other code from deleting properties of an object.
+A sealed object has fixed properties:
+ - New properties can be added
+ - existing properties cannot be removed
+ - their enumerability and configurability cannot be changed
+ - it's prototype cannot be re-assigned
+ -!! Values of existing properties can still be changed as long as they are writable.
+ 
 Object.setPrototypeOf(): sets the object's prototype(its internal [[Prototype]] property).
 Object.values(): returns an array containing the values that correspond to all of a given object's own enumerable string properties.
 

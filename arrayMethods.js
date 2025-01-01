@@ -5,15 +5,15 @@
 // ### Code:
 // ```javascript
 // // 1. myMap
-// Array.prototype.myMap = function (callbackFn) {
-//   const result = [];
-//   for (let i = 0; i < this.length; i++) {
-//     if (this.hasOwnProperty(i)) {
-//       result.push(callbackFn(this[i], i, this));
-//     }
-//   }
-//   return result;
-// };
+Array.prototype.myMap = function (callbackFn) {
+  const result = [];
+  for (let i = 0; i < this.length; i++) {
+    if (this.hasOwnProperty(i)) {
+      result.push(callbackFn(this[i], i, this));
+    }
+  }
+  return result;
+};
 
 // // 2. myFilter
 // Array.prototype.myFilter = function (callbackFn) {
@@ -54,10 +54,10 @@
 // ### Example Usage:
 
 // #### `myMap`
-// ```javascript
-// const nums = [1, 2, 3, 4];
-// const squared = nums.myMap(num => num * num);
-// console.log(squared); // Output: [1, 4, 9, 16]
+// javascript
+const nums = [1, 2, 3, 4];
+const squared = nums.myMap(num => num * num);
+console.log(squared); // Output: [1, 4, 9, 16]
 // ```
 
 // #### `myFilter`

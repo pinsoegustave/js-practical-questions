@@ -1,5 +1,5 @@
 const binaryArrayToNumber = arr => {
-    your code
+    // your code
     const num = arr.reverse().join('');
     console.log(num);
   

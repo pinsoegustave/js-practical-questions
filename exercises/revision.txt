@@ -1,0 +1,9 @@
+## Practice Exercises
+
+### Round 1
+
+1. By definition, undefined means a variable has been declared but has not yet been assigned a value, whereas null is an assignment value, meaning that a variable has been assigned and given a value of null
+2. Parameters define the type and number of inputs a function can accept, while arguments are specific values passed to the function during execution.
+
+3. In JavaScript, to set default values for a parameter, add an equal sign (=) after the parameter name, followed by the default value.
+

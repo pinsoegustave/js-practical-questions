@@ -25,3 +25,22 @@ Link for more: https://freecodecamp.org/news/object-oriented-programming-javascr
 How does this keyword behave in arrow and normal functions.
 - With arrow functions there are no binding of this. In regular functions the this keyword represented the object that called the function, which could be a window, the document, a button or whatever.
 
+### Round 2
+What are the different ways of declaring variables in JavaScript, and differentiate between them.(Follow up: hoisting)
+- By using let, var and const keywords followed by the variable name of your choice.
+Hoisting: is the default behaviour in JavaScript where variable and function declarations are moved at the top of their respective scopes during the compilation phase.
+
+What is the difference between slice and splice array methods?
+slice() is used to extract parts of an array without modifying the original array whereas splice() is used to change the content of an array by removing, replacing, or adding elements.
+
+What are the different ways of creating an object in JavaScript.
+-Object literal, -Constructor, -create method, Object constructor, Object.create, Object.assign(), ES6 Classes, Classes
+
+What is the difference between higher order function and callback function and give us examples of higher order functions in JavaScript you know.
+Higher Order Functions, these are functions that accept other functions as parameters whereas callback functions are those functions that are passed as parameters in HOF.
+Examples include: map(), filter(), reduce(), every(), some(), forEach()
+
+Differentiate between call, bind and apply methods.
+- Call method: Immediately invokes a function with a specific this context and arguments passed individually.
+- Apply method: Immediately invokes a function with a specific this context, but arguments are passed as an array.
+- Bind method: Creates a new function with a specific this context. It doesnot immediately invoke the function.

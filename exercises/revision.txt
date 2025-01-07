@@ -1,9 +1,27 @@
 ## Practice Exercises
 
 ### Round 1
-
+What is the difference between null and undefined?
 1. By definition, undefined means a variable has been declared but has not yet been assigned a value, whereas null is an assignment value, meaning that a variable has been assigned and given a value of null
+
+What is the difference between arguments and parameters?
 2. Parameters define the type and number of inputs a function can accept, while arguments are specific values passed to the function during execution.
 
+How do you set default values on parameters?
 3. In JavaScript, to set default values for a parameter, add an equal sign (=) after the parameter name, followed by the default value.
+
+What are the string methods you know?
+-concate(), indexOf(), match(), matchAll(), split(), trim(), toLowerCase(), toUpperCase().
+
+How can you change a string into an array?
+By using split() method.
+
+What is OOP?
+OOP is a programming style based on classes and objects.
+Mention OOP concepts you know.
+-Abstraction, -Encapsulation, -Polymorphism, and inheritance.
+Link for more: https://freecodecamp.org/news/object-oriented-programming-javascript/
+
+How does this keyword behave in arrow and normal functions.
+- With arrow functions there are no binding of this. In regular functions the this keyword represented the object that called the function, which could be a window, the document, a button or whatever.
 

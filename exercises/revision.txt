@@ -44,3 +44,20 @@ Differentiate between call, bind and apply methods.
 - Call method: Immediately invokes a function with a specific this context and arguments passed individually.
 - Apply method: Immediately invokes a function with a specific this context, but arguments are passed as an array.
 - Bind method: Creates a new function with a specific this context. It doesnot immediately invoke the function.
+
+### Round 3
+What is the difference between primitive and non primitive datatypes
+Primitive data types are immutable, meaning their values cannot be changed once assigned. Examples include: Number, String, integers, boolean, float, char, Undefined, Null, bigint, Symbol
+Non-Primitive data types are mutable, meaning their values can be changed. Examples are Objects, Arrays, Strings, Classes, interfaces, ArrayList and HashMap
+
+What is a callback function? This is a function that is passed as an argument or parameter inside another function(a higher order function);
+
+What are arrow functions in JavaScript? How do they differ from regular functions?
+Arrow functions are functions with a shorter syntax for writing functions in JavaScript. It was introduced in ES6. Differ, arrow functions don't have their own bindings to this, arguments, or super, and should not be used as methods.
+
+What’s the difference between implicit and explicit type coercion?
+Type coercion, this is when JavaScript engines reads and understands the variable declarations and storage. Implicit type coercion happens automatically, while explicit type coercion is done intentionally by the programmer. converts the values from one datatype to another using functions like Number(), String(), Boolean().
+
+What is strict mode in JavaScript?
+Strict mode is a way to opt in to a restricted variant of JavaScript which makes it easier to write "secure" JavaScript.
+

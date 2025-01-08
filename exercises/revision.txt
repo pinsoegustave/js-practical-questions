@@ -109,3 +109,33 @@ Explain hoisting in Javascript
 Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to the execution of the code.
 
 Why choose the bracket notation over dot notation when accessing object key to retrieve information? We can choose bracket notation over dot notation when accessing an object key to retrieve information when you need to dynamically determine the property name at runtime. where dot notation only works with static known property names.
+
+What is the use of the string.substring method and how is it different from string.slice?
+substring() is a string method used to extract characters from a given start index to the last given. Difference to sting.slice():
+substring() with a negative argument ignores the negative and starts from the beginning while slice() starts from the end to start.
+substring() with indexEnd greater than the indexStart swaps them and return characters. while slice() returns the empty string.
+substring() with negative arguments returns empty string as it doesnot accept negatives while slice with act normal.
+
+What is DOM?
+DOM is a programming interface that allows programs to interact with web documents. It represents a document with a logic tree of nodes and objects.
+
+How to select DOM Elements in JavaScript ?
+Using getElementById.
+Using getElementsByClassName.
+Using getElementsByTagName.
+Using querySelector.
+Using querySelectorAll.
+
+What is the difference between Java and Javascript
+Java is an OOP programming language and its applications run in a virtual machine or browser while JavaScript is an OOP scripting language that run on a browser only.
+
+How do you check the type of a variable?
+By using typeof operator followed with the variable you need to check.
+
+What is the type of array? Object. to check it, typeof, isArray, Array()
+
+What is the difference between Nullish Coalescing and optional chaining?
+Optional chaining allows for concise handling of potential null or undefined values. while nullish coalescing allows for default values to be assigned in the case of null and undefined.
+More info: https://blog.openreplay.com/mastering-javascript-optional-chaining-and-nullish-coalescing/#:~:text=Optional%20Chaining%20allows%20for%20concise,of%20practice%20and%20careful%20consideration. && https://www.youtube.com/watch?v=oEr14-JTm_M && https://www.youtube.com/watch?v=YTv1iL9zib8
+
+

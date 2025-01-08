@@ -157,3 +157,25 @@ Asynchronous programming is a technique that allows a computer program to run mu
 It can be achieved through various methods including: callback functions, promises, async.await syntax, event-based asynchronous patterns(EAP) and task-based asynchronous patterns(TAP)
 
 To remove special character: use this pattern /[^a-zA-Z0-9\s]/g
+
+### Round 8
+What is loops? What loops do we have in JavaScript?
+Loops are used to execute a set of instructions repeatedly until a particular condition is met.
+there are 3 types of loops: while loop, do while loop, for loops.
+
+What is an arrow function?
+Arrow function is a function with a shorter syntax for writing functions in JavaScript. It was introduced in ES6. It has an arrow-like sign.
+
+How can you convert string to a number, 2 ways?
+- Number constructor
+- parseInt(), parseFloat methods,\
+- Unary operator
+- Math 
+
+What do you know about NaN?
+NaN stands for "Not a Number" and is a numeric data type that represents an undefined value or value that cannot be represented, especially results of floating-point calculations.
+It is also used to determine if a number is not a legal number.
+
+What is the difference between First class functions and First order functions
+First-class functions are functions treated like variables in a programming language. while first-order functions are regular functions that don't take or return functions.
+

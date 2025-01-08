@@ -89,3 +89,23 @@ Stages of event propagation.
 - Targeting: The event reaches the target element.
 - Bubbling: event starts from the target element and moves up to the root of the DOM.
 
+What is the purpose of the switch case in Javascript?
+The switch statement evaluates an expression where the value of an expression is compared with the values of each case in the structure.
+
+What is for...of statement and how does it differ from for...in?
+The for...of statement exexutes a loop that operates on a sequence of values sourced from an iterable objects.
+The main difference is what they iterate over:
+for...in: iterates over the enumerable string properties of an object. whereas
+for...of: iterates over the values that the iterable object defines to be iterated over.
+
+State 3 types of functions in Javascript
+- Anonymous function
+- Named functions
+- Arrow functions
+- IIFE functions: Immediately Invoked Function Expressions
+- Calling functions
+
+Explain hoisting in Javascript
+Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to the execution of the code.
+
+Why choose the bracket notation over dot notation when accessing object key to retrieve information? We can choose bracket notation over dot notation when accessing an object key to retrieve information when you need to dynamically determine the property name at runtime. where dot notation only works with static known property names.

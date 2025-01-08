@@ -139,3 +139,21 @@ Optional chaining allows for concise handling of potential null or undefined val
 More info: https://blog.openreplay.com/mastering-javascript-optional-chaining-and-nullish-coalescing/#:~:text=Optional%20Chaining%20allows%20for%20concise,of%20practice%20and%20careful%20consideration. && https://www.youtube.com/watch?v=oEr14-JTm_M && https://www.youtube.com/watch?v=YTv1iL9zib8
 
 
+### Round 7
+What is the use of the string.substring method and how is it different from string.slice?
+
+What is an Immediately Invoked Function Expression and why are they used?
+This is a function that is defined and executed immediately after it is created.
+Used: - to create private scopes.
+    - Avoid polluting the global scopes
+    - Execute codes immediately
+
+In Javascript how do you check the type of a variable? typeof operator
+What is the type of an array? Object... isArray, Array(), typeof()
+Differentiate between mutability and immutability in variables.
+
+What is asynchronous programming and what are different ways to achieve it?
+Asynchronous programming is a technique that allows a computer program to run multiple tasks simultaneously, instead of waiting one task to finish before starting the next.
+It can be achieved through various methods including: callback functions, promises, async.await syntax, event-based asynchronous patterns(EAP) and task-based asynchronous patterns(TAP)
+
+To remove special character: use this pattern /[^a-zA-Z0-9\s]/g

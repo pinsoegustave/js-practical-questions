@@ -6,11 +6,9 @@ function countCharacters() {
 
     let char = text.value;
 
-    for(let i = 0; i < char.length; i++) {
+    count = char.length
         count++;
-    }
-    console.log(count);
-    textMsg.textContent = count + " character"
+    textMsg.textContent = count + " characters"
 }
 
 text.addEventListener('input', countCharacters);

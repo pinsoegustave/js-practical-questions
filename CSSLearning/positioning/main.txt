@@ -1,0 +1,28 @@
+## CSS Learning: CSS Positioning
+
+The position CSS property sets how an element is positioned. The top, right, bottom, and left properties 
+
+Values:
+- static
+The element is positioned according to the Normal flow of the document. The top, right, left, z-index and bottom properties have no effect. This is the default value.
+
+- relative
+An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+- fixed
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+
+Notice the fixed element in the lower-right corner of the page.
+
+- absolute
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+- sticky

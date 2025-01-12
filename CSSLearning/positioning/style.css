@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.box-1 {
+    height: 300px;
+    width: 300px;
+    background-color: skyblue;
+    border: 2px solid black;
+
+    margin: auto;
+}
+.box-2 {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+}

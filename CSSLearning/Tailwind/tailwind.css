@@ -116,3 +116,16 @@
     font-weight: 900;
     font-style: italic;
   }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.left {
+    grid-column: 1 / 5;
+
+}
+.right {
+    grid-column: 1 / 3;
+}

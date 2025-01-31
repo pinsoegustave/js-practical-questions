@@ -1,24 +1,22 @@
-function get(url) {
-    
-    return fetch(url, {
-        method: 'get'
-    });
-};
+var urls = [];
 
-function getJSON(url) {
-    return get(url).then(function(response) {
-        return response.json;
-    })
-};
+async('example.json').then(function(data) {
+    urls = data.urls;
 
-window.addEventListener('WebComponentsReady', function() {
-    home = document.querySelector('section[data-route="home"]');
-
-    getJSON('http://udacity.github.io/exoplanet-explorer/site/app/data/earth-like-results.json').then(function(response) {
-        addSearchHeader(response.query);
-    }).catch(function(error) {
-        addSearchHeader('unknown');
-        console.log(error)
-    })
+    return async(urls[0]);
 })
-
+.then(undefined, function(e) {
+    console.log(1);
+    return recovery();
+})
+.catch(function(e) {
+    console.log(2);
+})
+.then(function() {
+    console.log(3);
+    return async(urls[1]);
+})
+.then(async, function(e) {
+    console.log(4);
+    ahhhGiveUp();
+});

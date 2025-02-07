@@ -6,11 +6,13 @@ function sumDigPow(a, b) {
 
     const powArr = newArr.map((ele, index) => Math.pow(ele, index+1));
 
-    // const summation = powArr.reduce((acc, curr) => acc + curr, 0);
+    const summation = powArr.reduce((acc, curr) => acc + curr, 0);
 
-    result.push(num);
-
+    if (summation === num) {
+      result.push(num);
     }
+  }
+
   return result;
 }
 console.log(sumDigPow(1, 100));

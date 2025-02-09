@@ -12,9 +12,12 @@ body {
     /* width: 900px; */
     margin: 0 auto;
     width: 80%;
+
+    /* overflow: hidden; */
 }
 
 .child {
     background-color: #38CFD9;
+    width: 50%;
     height: 250px;
 }

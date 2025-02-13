@@ -934,6 +934,9 @@
   .animate-none {
     animation: none;
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .touch-pinch-zoom {
     --tw-pinch-zoom: pinch-zoom;
     touch-action: var(--tw-pan-x,) var(--tw-pan-y,) var(--tw-pinch-zoom,);
@@ -1416,6 +1419,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-cyan-400 {
+    background-color: var(--color-cyan-400);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1424,6 +1430,9 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .-bg-conic {
     --tw-gradient-position: in oklab;
@@ -1594,6 +1603,9 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
   .text-center {
     text-align: center;
   }
@@ -1635,6 +1647,13 @@
   }
   .align-top {
     vertical-align: top;
+  }
+  .font-\[Poppins\] {
+    font-family: Poppins;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-3xl {
     font-size: var(--text-3xl);

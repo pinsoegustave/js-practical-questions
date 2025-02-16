@@ -6,6 +6,9 @@ function arrayStats(arr) {
     const fixed = average.toFixed(2);
     const max = Math.max(...arr);
     const min = Math.min(...arr);
+    // const min = Math.min(...arr);
+    // const min = Math.min(...arr);
+    // const min = Math.min(...arr);
 
     return { sum, fixed, min, max }
 }

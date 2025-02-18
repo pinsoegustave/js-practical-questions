@@ -16,4 +16,6 @@ body {
 }
 .upper {
     background-color: #23424A;
+    padding: 5em;
+    margin: 0 auto;
 }

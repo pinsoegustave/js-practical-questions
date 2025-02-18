@@ -19,3 +19,23 @@ body {
     padding: 5em;
     margin: 0 auto;
 }
+.upper h2 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Roboto', serif;
+    margin-bottom: 20px;
+
+}
+.upper p {
+    font-size: 18px;
+}
+.upper button {
+    margin-top: 30px;
+    padding: 12px;
+    border-radius: 30px;
+    background-color: #38CFD9;
+    border: none;
+    color: #23424A;
+    font-weight: bold;
+    font-size: 13px;
+}

@@ -1,0 +1,69 @@
+## ES6 Mental model session 29.01.2025
+
+### What do you think about ES6 and ES5?
+ES6 (ECMAScript 6) is considered a significant improvement over ES5 (ECMAScript 5) in terms of JavaScript development, offering a more concise, readable, and powerful syntax with features like arrow functions, let/const variables, classes, modules, and destructuring, making it the preferred choice for modern JavaScript projects while ES5 is still relevant for older codebases due to wider browser compatibility but is generally considered outdated for new development. 
+Key points about ES6 compared to ES5:
+Improved readability:
+ES6 features like arrow functions and template literals make code more readable and easier to understand. 
+Better object handling:
+ES6 provides features like destructuring which allows for easier extraction of properties from objects and arrays. 
+Modern module system:
+ES6 has a native module system with import and export keywords, whereas ES5 requires additional tools for module management. 
+Block-scoped variables:
+ES6 introduced let and const which are block-scoped, enhancing code clarity and preventing variable hoisting issues. 
+Classes:
+ES6 provides a more structured way to define classes with the class keyword, making object-oriented programming easier. 
+When to use ES5:
+Legacy browser support:
+If you need to support very old browsers that don't fully support ES6 features, you may need to use ES5 or transpile ES6 code to ES5. 
+Simple projects:
+For small projects where the added complexity of ES6 features isn't necessary, ES5 might be sufficient. 
+Overall, while ES5 still has its place in certain situations, most developers should prioritize learning and using ES6 for new JavaScript projects due to its significant advantages in code quality and maintainability. 
+
+### What is prototype inheritance is it in ES6 or ES5?
+Prototype inheritance is a key concept in JavaScript that allows objects to inherit properties and methods from other objects. It is primarily associated with ES5, but it is still fundamental in ES6 and later versions.
+
+In JavaScript, every object has an internal property called [[Prototype]], which links to another object. This forms a prototype chain, allowing objects to share methods and properties.
+
+The prototype chain is a core JavaScript concept enabling the inheritance of properties and methods between objects. It facilitates code reuse, efficient property lookup, and object hierarchy creation.
+
+### What is the difference between rest parameters and spread operators?
+The Spread Operator
+The spread operator, denoted by three consecutive dots (...), is primarily used for expanding iterables like arrays into individual elements. This operator allows us to efficiently merge, copy, or pass array elements to functions without explicitly iterating through them.
+Use Cases(Spread Operators):
+- Combining Arrays
+The spread operator provides an elegant solution for combining multiple arrays into a single array. By spreading each array's elements within a new array, we can concatenate them effortlessly.
+- Passing Arguments to Functions
+The spread operator simplifies the process of passing variable-length arguments to functions. Instead of specifying each argument individually, we can use the spread operator to unpack an array of values into function parameters.
+- Copying Arrays
+The spread operator offers a concise method for copying arrays, ensuring that modifications to the copied array do not affect the original. By spreading the original array's elements into a new array, we create a distinct copy.
+
+The Rest Parameters
+    While the spread operator expands elements, the rest operator condenses them into a single entity within function parameters or array destructuring. It collects remaining elements into a designated variable, facilitating flexible function definitions and array manipulation.
+Use Cases(Rest Parameters):
+Handling Variable-Length Function Arguments
+The rest operator simplifies the handling of variable-length arguments in functions. It allows functions to accept an indefinite number of arguments without explicitly specifying each one.
+Array Destructuring
+The rest operator is commonly used in array destructuring to capture remaining elements into a separate array variable.
+
+Arrow Functions in JavaScript (ES6) 🚀
+Arrow functions were introduced in ES6 (ECMAScript 2015) as a more concise way to write functions. They are especially useful for shorter syntax and lexical this binding.
+
+Key Features of Arrow Functions
+1. Implicit Return
+If the function contains only a single expression, the result is automatically returned.
+2. No Own this (Lexical this)
+Arrow functions do not bind their own this. Instead, they inherit this from the surrounding context
+3. Cannot be Used as Constructors
+Arrow functions cannot be used with new. They don't have a prototype.
+4. No arguments Object
+Arrow functions do not have an arguments object.
+When to Use Arrow Functions? ✅
+✔ When you need shorter syntax
+✔ When you want lexical this (e.g., inside callbacks)
+✔ When you don’t need arguments or new
+
+When NOT to Use Arrow Functions? ❌
+✖ When defining object methods
+✖ When using constructors
+✖ When you need arguments

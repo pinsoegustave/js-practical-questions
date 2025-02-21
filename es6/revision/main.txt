@@ -107,5 +107,15 @@ bind() does not immediately execute the function but returns a new function with
 In ES6 classes, this behaves similarly to objects and constructor functions.
 
 🚨 Problem with this in a Class Method If you pass a class method to an event listener, this can be lost:
-
-
+### What do you think about template literals?
+✅ Why is this better?
+No need for string concatenation (+)
+More readable and cleaner
+2. Multi-line Strings (No Need for \n)
+Template literals support multi-line strings naturally.
+3. String Interpolation (Embedding Expressions)
+You can insert variables, expressions, or function calls inside ${}.
+4. Tagged Templates (Advanced Usage)
+You can pass template literals to a function, called a tag function, which can process the string before returning it.
+5. Nesting Template Literals
+You can even nest template literals inside each other.

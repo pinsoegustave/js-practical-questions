@@ -67,3 +67,45 @@ When NOT to Use Arrow Functions? ❌
 ✖ When defining object methods
 ✖ When using constructors
 ✖ When you need arguments
+
+### (how does this keyword work)?
+1. this in the Global Scope
+In the global execution context (outside any function), this refers to:
+
+The global object (window in browsers, global in Node.js).
+undefined in strict mode ("use strict").
+2. this Inside a Function
+In non-strict mode, this refers to the global object (window).
+In strict mode, this is undefined.
+
+3. this Inside an Object Method
+When a function is a method inside an object, this refers to that object.
+
+4. this in a Constructor Function
+When using a constructor function (called with new), this refers to the newly created object.
+
+5. this in Arrow Functions
+🚀 Arrow functions do not have their own this. Instead, they inherit this from their surrounding (lexical) scope.
+
+6. this in Event Listeners
+In an event listener, this refers to the element that received the event.
+
+7. Explicitly Setting this (call, apply, bind)
+Sometimes, we want to control what this refers to. We can do this using:
+
+call()
+apply()
+bind()
+Using call()
+call() immediately invokes a function with a specified this.
+Using apply()
+apply() is similar to call(), but it takes arguments as an array.
+Using bind()
+bind() does not immediately execute the function but returns a new function with this set.
+
+8. this in Class Methods
+In ES6 classes, this behaves similarly to objects and constructor functions.
+
+🚨 Problem with this in a Class Method If you pass a class method to an event listener, this can be lost:
+
+

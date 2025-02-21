@@ -141,3 +141,23 @@ You can combine both named and default exports in a single module.
 4. Re-exporting (export * from)
 ✅ Used to re-export everything from another module.
 
+### ES6 Class Keywords: super, static, and extends 🚀
+ES6 introduced class-based object-oriented programming (OOP) in JavaScript.
+Three important keywords used in ES6 classes are:
+
+extends → For class inheritance
+super → To call the parent class constructor & methods
+static → To define class-level (not instance-level) properties & methods
+1. extends → Inheritance in ES6 Classes
+✅ Allows one class to inherit from another class.
+
+When a class extends another class, it inherits all its properties and methods.
+2. super → Calling Parent Constructor & Methods
+✅ Used to call the constructor or methods from the parent class inside a child class.
+
+- Calling Parent Constructor
+- Calling Parent Methods
+3. static → Class-Level Methods & Properties
+✅ Creates properties & methods that belong to the class, NOT to instances.
+    🚀 Key Points:
+    Static methods are called on the class itself, not on instances.

@@ -119,3 +119,25 @@ You can insert variables, expressions, or function calls inside ${}.
 You can pass template literals to a function, called a tag function, which can process the string before returning it.
 5. Nesting Template Literals
 You can even nest template literals inside each other.
+
+### Types of Exports in ES6 🚀
+In ES6 (ECMAScript 2015), there are two main types of exports:
+
+- Named Exports
+- Default Exports
+These are used to export values (functions, variables, objects, classes) from a module so they can be imported in another file.
+
+1. Named Exports (export)
+✅ Used to export multiple items from a module.
+2. Default Export (export default)
+✅ Used to export a single value from a module.
+✅ You can import it with any name (no {} needed).
+    🚀 Key Points:
+    No {} needed when importing a default export.
+    The imported name does not have to match the original export name.
+3. Named + Default Exports in the Same Module
+You can combine both named and default exports in a single module.
+
+4. Re-exporting (export * from)
+✅ Used to re-export everything from another module.
+

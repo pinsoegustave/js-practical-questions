@@ -161,3 +161,8 @@ When a class extends another class, it inherits all its properties and methods.
 ✅ Creates properties & methods that belong to the class, NOT to instances.
     🚀 Key Points:
     Static methods are called on the class itself, not on instances.
+    
+### Constructor Functions vs. Classes in JavaScript (ES6) 🚀
+In JavaScript, both constructor functions and classes are used to create objects.
+However, ES6 classes provide a more structured and readable way to achieve the same functionality.
+

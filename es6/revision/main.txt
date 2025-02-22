@@ -166,8 +166,35 @@ When a class extends another class, it inherits all its properties and methods.
 In JavaScript, both constructor functions and classes are used to create objects.
 However, ES6 classes provide a more structured and readable way to achieve the same functionality.
 
-fkdsjknvjkz
-vnkjnvifo;
-vmfvfn
-nuia
-fuidf
+Difference Between Set, Object, Array, and Map in JavaScript 🚀
+1️⃣ Objects ({})
+✅ Used to store key-value pairs where keys are always strings (or symbols).
+Key Features of Objects
+Keys must be strings or symbols (not numbers or other data types).
+Values can be any type (string, number, array, function, etc.).
+Objects are not iterable (you can loop using for...in, but not forEach).
+They are used for storing structured data (e.g., user profiles, configurations).
+
+2️⃣ Arrays ([])
+✅ Ordered collections of elements (indexed values).
+Key Features of Arrays
+Elements are indexed (0,1,2,...).
+Supports methods like push(), pop(), map(), filter().
+Allows duplicate values.
+Used when order matters (e.g., lists, sequences).
+
+3️⃣ Set (new Set())
+✅ A collection of unique values (no duplicates allowed).
+Key Features of Sets
+Only unique values (removes duplicates automatically).
+Elements are unordered (no index-based access).
+Provides methods like add(), delete(), has(), and size.
+Useful for storing unique items (e.g., unique user IDs, tags).
+
+4️⃣ Map (new Map())
+✅ A key-value data structure where keys can be of any type.
+Key Features of Maps
+Keys can be any type (numbers, strings, objects, even functions).
+Maintains insertion order.
+Supports methods like set(), get(), has(), and delete().
+Used for structured key-value data where keys are not limited to strings.

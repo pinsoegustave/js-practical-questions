@@ -198,3 +198,12 @@ Keys can be any type (numbers, strings, objects, even functions).
 Maintains insertion order.
 Supports methods like set(), get(), has(), and delete().
 Used for structured key-value data where keys are not limited to strings.
+
+
+## for..in and for..of loops.
+for..in used to iterate over enumerable properties(keys) of an object. while for..of is used to iterate over iterable objects like arrays, strings, maps, sets, and Nodelist
+
+for..in not recommended in Arrays because it may iterate through indexes instead of values. while for..of can be a best fit for arrays.
+
+for..in returns a property name(key/index) while for..of returns the value directly.
+

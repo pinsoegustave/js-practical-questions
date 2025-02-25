@@ -4,5 +4,5 @@ class Car {
         this.wheels = wheels;
     }
 
-    console.log("th")
+    
 }

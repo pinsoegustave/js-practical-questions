@@ -8,7 +8,7 @@ class Person {
     }
 }
 let john = new Person("John Doe");
-console.log(john);
+console.log(john.name);
 
 console.log(typeof Person);
 

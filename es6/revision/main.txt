@@ -207,3 +207,20 @@ for..in not recommended in Arrays because it may iterate through indexes instead
 
 for..in returns a property name(key/index) while for..of returns the value directly.
 
+## Difference between getters and setters?
+- The `get` keyword binds an object property to a method that will be invoked when that property is looked up.
+- The `set` keyword binds an object property to a method that will be invoked when that property is assigned.
+
+## What is the difference between weak map and Map?
+
+1. Map: Stores Any Data Type & Supports Iteration
+Keys can be objects, numbers, or strings.
+Iteration is possible using .keys(), .values(), .entries(), or forEach().
+Keys are strongly referenced, meaning they prevent garbage collection.
+
+2. WeakMap: Only Works with Object Keys & Auto-Cleans Memory
+Keys must be objects (not strings or numbers).
+No iteration methods (forEach, keys(), etc.).
+Allows garbage collection—when an object key is no longer referenced elsewhere, it is automatically removed from the WeakMap.
+
+

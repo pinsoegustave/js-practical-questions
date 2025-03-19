@@ -42,6 +42,8 @@ body {
 }
 
 .lower {
-    background-color: red;
-    padding: 16px;
+    background-color: #3eb0da;
+    padding: 5em;
+    margin: 0 auto;
+    color: white;
 }

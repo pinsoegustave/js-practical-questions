@@ -11,10 +11,10 @@ void printWordWithStars(const char *word) {
 int main() {
     char word[100];
     
-    // printf("Enter a word: ");
-    // scanf("%s", word);
+    printf("Enter a word: ");
+    scanf("%s", word);
     
-    // printf("Output: ");
+    printf("Output: ");
     printWordWithStars("KIGALI");
     
     return 0;

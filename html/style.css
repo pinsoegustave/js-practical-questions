@@ -1,47 +1,21 @@
-body {
-    margin: 0;
-    overflow-x: hidden;
-    background: #f5f5f5;
-  }
-  
-  .hero-section {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .shape {
-    position: absolute;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .shape.yellow {
-    width: 250px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    border: 2px solid saddlebrown;
+    padding: 12px;
+}
+
+.one {
+    background-color: brown;
     height: 250px;
-    background: yellow;
-    top: 10%;
-    left: 10%;
-    clip-path: polygon(10% 0%, 100% 20%, 80% 100%, 0% 80%);
-  }
-  
-  .shape.red {
-    width: 200px;
-    height: 200px;
-    background: red;
-    bottom: 20%;
-    left: 20%;
-    clip-path: polygon(20% 10%, 90% 30%, 70% 90%, 0% 70%);
-  }
-  
-  .shape.blue {
-    width: 300px;
-    height: 300px;
-    background: blue;
-    top: 15%;
-    right: 15%;
-    clip-path: polygon(10% 10%, 80% 5%, 90% 80%, 5% 90%);
-  }
-  
+    overflow-x: auto;
+}
+
+.two {
+    background-color: fuchsia;
+}
+
+.three {
+    background-color: green;
+}

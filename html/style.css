@@ -19,3 +19,7 @@
 .three {
     background-color: green;
 }
+
+.three:hover {
+    overflow: visible;
+}

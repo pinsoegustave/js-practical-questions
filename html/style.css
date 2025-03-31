@@ -1,25 +1,25 @@
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    border: 2px solid saddlebrown;
-    padding: 12px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+.container {
+    width: 100vw;
+}
 .one {
+    width: 100%;
     background-color: brown;
-    height: 250px;
-    overflow-x: auto;
 }
 
 .two {
+    width: 40vw;
+    padding: 10px;
     background-color: fuchsia;
 }
 
-.three {
-    background-color: green;
-}
-
-.three:hover {
-    overflow: visible;
+@media screen and (min-width: 680px) and (max-width: 1120px) {
+    .one {
+        width: 60%; 
+    }
 }

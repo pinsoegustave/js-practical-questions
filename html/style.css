@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 100vw;
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.one {
-    width: 100%;
+
+.cards {
+    height: 200px;
+    flex: 1 0 200px;
     background-color: brown;
 }
 

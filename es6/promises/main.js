@@ -1,4 +1,5 @@
 function syncfunc() {
-    return 'hello world';
+    const answer = "my friend"
+    return 'hello world, ' + answer;
 }
 console.log(syncfunc());

@@ -1,0 +1,42 @@
+Function UpdateStock() as void
+    Pointer file, temp as FILE
+    Variable medID, quantityChange as integer
+    Variable operation as string  // "IN" or "OUT"
+    
+    Write("--- UPDATE STOCK LEVEL ---")
+    Write("Enter Medicine ID: ")
+    Read(medID)
+    Write("Add stock (IN) or Remove stock (OUT)? ")
+    Read(operation)
+    Write("Enter Quantity: ")
+    Read(quantityChange)
+    
+    file <= fopen("medicines.txt", "r")
+    temp <= fopen("temp.txt", "w")
+    
+    While (!feof(file))
+        fread(file, med.ID, med.Name, med.Type, med.ExpiryDate, med.Quantity, med.SupplierID)
+        
+        If (med.ID == medID) Then
+            If (operation == "IN") Then
+                med.Quantity <= med.Quantity + quantityChange
+            Else If (operation == "OUT") Then
+                If (med.Quantity >= quantityChange) Then
+                    med.Quantity <= med.Quantity - quantityChange
+                Else
+                    Write("Error: Not enough stock!")
+                End If
+            End If
+        End If
+        
+        fwrite(temp, med.ID, med.Name, med.Type, med.ExpiryDate, med.Quantity, med.SupplierID)
+    End While
+    
+    fclose(file)
+    fclose(temp)
+    
+    remove("medicines.txt")
+    rename("temp.txt", "medicines.txt")
+    
+    Write("Stock updated successfully!")
+End Function

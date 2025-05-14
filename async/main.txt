@@ -1,0 +1,30 @@
+ ### Mental Model Session 1
+
+1. What does asynchronous JavaScript mean and at its core fundamental, how is it achieved in JavaScript?
+
+- Asynchronous JavaScript means executing operations( like fetching data or reading a file) without blocking the main thread. Instead of waiting for an operation to complete, JS continues to execute other code.
+Core fundamental mechanism:
+    - Callbacks
+    - Promises
+    - Async/Await
+    - Event Loop
+
+2. What is the difference btn concurrency and parallelism?
+    - Concurrency: Multiple tasks start, run, and complete in overlapping time periods. It's like a single worker juggling tasks.
+    - Parallelism: Multiple tasks are literally executed at the same time.( e.g., on multicore processors).
+
+3. Difference between concurrency and parallelism programming paradigms?
+    - Concurrent Programming focuses on structuring code to allow tasks to make progress independently (even on a single core).
+    - Parallel Programming involves dividing a task into subtasks that can be processed simultaneously on multiple processors.
+
+Concurrency Parallelism
+Overlapping vs simultaneously
+Better responsiveness vs Faster computation
+UI updates, I/O operations vs scientific computations
+
+4. How can you convert a callback-based function to a promise-based function?
+    - Use the Promises constructor or util.promisify() in Node.JS
+
+5. What is promise chaining?
+    - Promise chaining is the practice of linking multiple .then() calls to execute asynchronous tasks in sequence.
+

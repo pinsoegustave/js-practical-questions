@@ -1,6 +1,6 @@
- ### Mental Model Session 1
+ ## Mental Model Session 1
 
-1. What does asynchronous JavaScript mean and at its core fundamental, how is it achieved in JavaScript?
+###  1. What does asynchronous JavaScript mean and at its core fundamental, how is it achieved in JavaScript?
 
 - Asynchronous JavaScript means executing operations( like fetching data or reading a file) without blocking the main thread. Instead of waiting for an operation to complete, JS continues to execute other code.
 Core fundamental mechanism:
@@ -9,11 +9,11 @@ Core fundamental mechanism:
     - Async/Await
     - Event Loop
 
-2. What is the difference btn concurrency and parallelism?
+### 2. What is the difference btn concurrency and parallelism?
     - Concurrency: Multiple tasks start, run, and complete in overlapping time periods. It's like a single worker juggling tasks.
     - Parallelism: Multiple tasks are literally executed at the same time.( e.g., on multicore processors).
 
-3. Difference between concurrency and parallelism programming paradigms?
+### 3. Difference between concurrency and parallelism programming paradigms?
     - Concurrent Programming focuses on structuring code to allow tasks to make progress independently (even on a single core).
     - Parallel Programming involves dividing a task into subtasks that can be processed simultaneously on multiple processors.
 
@@ -22,31 +22,31 @@ Overlapping vs simultaneously
 Better responsiveness vs Faster computation
 UI updates, I/O operations vs scientific computations
 
-4. How can you convert a callback-based function to a promise-based function?
+### 4. How can you convert a callback-based function to a promise-based function?
     - Use the Promises constructor or util.promisify() in Node.JS
 
-5. What is promise chaining?
+### 5. What is promise chaining?
     - Promise chaining is the practice of linking multiple .then() calls to execute asynchronous tasks in sequence.
 
-6. What is the return type of the .then() function?
+### 6. What is the return type of the .then() function?
 
     - The .then() function returns a new Promise, not the original one. This allows for chaining of multiple asynchronous operations.
 
-7. What is the difference between resolved, settled, rejected, and fulfilled promise states?
+### 7. What is the difference between resolved, settled, rejected, and fulfilled promise states?
     - Pending: Initial state, not settled yet.
     - Fulfilled: The promise completed successfully.
     - Rejected: The promise failed with an error.
     - Settled: Either fulfilled or rejected-it's done.
     - resolved: Informally mean it's settled (fulfilled or rejected), through technically sometimes used interchangeably with "fulfilled".
 
-8. What is AJAX and why is it important if so?
+### 8. What is AJAX and why is it important if so?
 
     AJAX(Asynchronous JavaScript and XML) is a technique for sending/receiving data from a server without refreshing the page.
         Importance:
             Enables dynamic, fast, responsive web applications.
             Commonly used in SPA(Single Page Applications).
 
-9. How many states can an XMLHttpRequest object have and what are they?
+### 9. How many states can an XMLHttpRequest object have and what are they?
     It has 5 ready states:
     Unsent      Value: 0  Request not initialized
     Opened      Value: 1  Connection established
@@ -54,15 +54,14 @@ UI updates, I/O operations vs scientific computations
     Loading     Value: 3        Processing Request
     Done        Value: 4        Request finished and response ready
 
-10. What is an event loop?
+### 10. What is an event loop?
     The event loop is a mechanism that allows JavaScript to handle non-blocking I/O operations by:
         -Offloading operations to the Web APIs (like setTimeout, fetch)
         -Pushing their callbacks int the callback queue
         -The event loop picks then and pushes into the call stack when it's empty.
     It's what makes asynchronous JavaScript possible in a single-threaded environment.
 
-11. How does forEach(), map(), or for...of behave with promises?
+### 11. How does forEach(), map(), or for...of behave with promises?
     -forEach(): Doesn't work well with async/await. It doesn't wait for promises to resolve.
     -map(): Returns an array of promises. You need Promise.all() to wait for all.
     -for...of(): Works best with async/await in a sequential manner.
-    

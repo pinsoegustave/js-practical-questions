@@ -38,3 +38,19 @@ UI updates, I/O operations vs scientific computations
     - Rejected: The promise failed with an error.
     - Settled: Either fulfilled or rejected-it's done.
     - resolved: Informally mean it's settled (fulfilled or rejected), through technically sometimes used interchangeably with "fulfilled".
+
+8. What is AJAX and why is it important if so?
+
+    AJAX(Asynchronous JavaScript and XML) is a technique for sending/receiving data from a server without refreshing the page.
+        Importance:
+            Enables dynamic, fast, responsive web applications.
+            Commonly used in SPA(Single Page Applications).
+
+9. How many states can an XMLHttpRequest object have and what are they?
+    It has 5 ready states:
+    Unsent      Value: 0  Request not initialized
+    Opened      Value: 1  Connection established
+    Headers_received     Value: 2     Request_received
+    Loading     Value: 3        Processing Request
+    Done        Value: 4        Request finished and response ready
+

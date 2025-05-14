@@ -54,3 +54,15 @@ UI updates, I/O operations vs scientific computations
     Loading     Value: 3        Processing Request
     Done        Value: 4        Request finished and response ready
 
+10. What is an event loop?
+    The event loop is a mechanism that allows JavaScript to handle non-blocking I/O operations by:
+        -Offloading operations to the Web APIs (like setTimeout, fetch)
+        -Pushing their callbacks int the callback queue
+        -The event loop picks then and pushes into the call stack when it's empty.
+    It's what makes asynchronous JavaScript possible in a single-threaded environment.
+
+11. How does forEach(), map(), or for...of behave with promises?
+    -forEach(): Doesn't work well with async/await. It doesn't wait for promises to resolve.
+    -map(): Returns an array of promises. You need Promise.all() to wait for all.
+    -for...of(): Works best with async/await in a sequential manner.
+    

@@ -28,3 +28,13 @@ UI updates, I/O operations vs scientific computations
 5. What is promise chaining?
     - Promise chaining is the practice of linking multiple .then() calls to execute asynchronous tasks in sequence.
 
+6. What is the return type of the .then() function?
+
+    - The .then() function returns a new Promise, not the original one. This allows for chaining of multiple asynchronous operations.
+
+7. What is the difference between resolved, settled, rejected, and fulfilled promise states?
+    - Pending: Initial state, not settled yet.
+    - Fulfilled: The promise completed successfully.
+    - Rejected: The promise failed with an error.
+    - Settled: Either fulfilled or rejected-it's done.
+    - resolved: Informally mean it's settled (fulfilled or rejected), through technically sometimes used interchangeably with "fulfilled".

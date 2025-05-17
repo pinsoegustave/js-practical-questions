@@ -54,3 +54,11 @@ order(2000, ()=>{
     .then(() => {
         return order(1000, () => console.log("ice cream was served"));
     })
+
+    .catch(() => {
+        console.log("Customer left")
+    })
+
+    .finally(() => {
+        console.log("Day ended, our shop is closed.")
+    })

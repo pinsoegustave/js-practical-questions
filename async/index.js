@@ -50,3 +50,7 @@ order(2000, ()=>{
     .then(() => {
         return order(3000, () => console.log(`${stocks.toppings[0]} was selected`));
     })
+
+    .then(() => {
+        return order(1000, () => console.log("ice cream was served"));
+    })

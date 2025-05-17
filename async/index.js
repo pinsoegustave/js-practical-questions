@@ -31,4 +31,10 @@ order(2000, ()=>{
         return order(0, () => console.log("Production has started"));
     })
 
-    .then()
+    .then(() => {
+        return order(2000, () => console.log("The fruit was chopped"));
+    })
+
+    .then(() => {
+        return order(1000, () => console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} were selected`))
+    })

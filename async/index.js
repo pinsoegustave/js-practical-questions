@@ -46,3 +46,7 @@ order(2000, ()=>{
     .then(() => {
         return order(2000, () => console.log(`Icecream placed on ${stocks.holder[0]}`))
     })
+
+    .then(() => {
+        return order(3000, () => console.log(`${stocks.toppings[0]} was selected`));
+    })

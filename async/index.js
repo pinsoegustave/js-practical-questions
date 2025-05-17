@@ -42,3 +42,7 @@ order(2000, ()=>{
     .then(() => {
         return order(1000, () => console.log("Start the machine"));
     })
+
+    .then(() => {
+        return order(2000, () => console.log(`Icecream placed on ${stocks.holder[0]}`))
+    })

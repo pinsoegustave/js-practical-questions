@@ -38,3 +38,7 @@ order(2000, ()=>{
     .then(() => {
         return order(1000, () => console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} were selected`))
     })
+
+    .then(() => {
+        return order(1000, () => console.log("Start the machine"));
+    })

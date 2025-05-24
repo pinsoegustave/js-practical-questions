@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>XHR Example</title>
 </head>
 <body>
-    
+  <h1>Fetch Data with XMLHttpRequest</h1>
+  <button onclick="fetchData()">Fetch User</button>
+  <pre id="output"></pre>
+
+  <script>
+    function fetchData() {
+      const xhr = new XMLHttpRequest();
+      const url = 'https://jsonplaceholder.typicode.com/users/1'; // Example API
+
+      xhr.open('GET', url, true);
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) { // DONE
+          if (xhr.status === 200) {
+            const data = JSON.parse(xhr.responseText);
+            document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+          } else {
+            console.error('Error fetching data:', xhr.statusText);
+          }
+        }
+      };
+
+      xhr.send();
+    }
+  </script>
 </body>
 </html>

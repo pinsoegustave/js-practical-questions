@@ -35,3 +35,4 @@ kitchen();
 console.log("Doing the dishes");
 console.log("Cleaning the table");
 console.log("Taking other orders");
+console.log("Chop rice")

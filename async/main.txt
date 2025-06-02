@@ -57,7 +57,7 @@ UI updates, I/O operations vs scientific computations
 ### 10. What is an event loop?
     The event loop is a mechanism that allows JavaScript to handle non-blocking I/O operations by:
         -Offloading operations to the Web APIs (like setTimeout, fetch)
-        -Pushing their callbacks int the callback queue
+        -Pushing their callbacks into the callback queue
         -The event loop picks then and pushes into the call stack when it's empty.
     It's what makes asynchronous JavaScript possible in a single-threaded environment.
 

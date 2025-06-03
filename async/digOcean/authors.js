@@ -7,12 +7,12 @@ fetch(url)
     .then((response) => {
         return response.json();
     })
-    .then((data) => {
-        let authors = data;
+    .then((json) => {
+        // let authors = data;
 
-        console.log(data);
+        // console.log(data);
 
-        authors.map(function(author) {
+        json.map(function(author) {
             let li = document.createElement('li');
             let name = document.createElement('h2');
             let email = document.createElement('span');
@@ -23,9 +23,10 @@ fetch(url)
             li.appendChild(name);
             li.appendChild(email);
             list.appendChild(li);
+            ul.appendChild(list);
+
         })
     })
     .catch((error) => {
         console.error(error);
     })
-ul.appendChild(list);

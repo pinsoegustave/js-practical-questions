@@ -8,9 +8,6 @@ fetch(url)
         return response.json();
     })
     .then((json) => {
-        // let authors = data;
-
-        // console.log(data);
 
         json.map(function(author) {
             let li = document.createElement('li');

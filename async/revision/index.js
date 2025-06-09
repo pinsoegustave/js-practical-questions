@@ -1,9 +1,19 @@
-function fetchData(callback) {
+const myPromise = new Promise((resolve, reject) => {
+    
     setTimeout(() => {
-        callback("Data received!");
-    }, 3000);
-}
+        const success = true;
+        if(!success) {
+            resolve("Operation successful!");
+        }
+        else {
+            reject("Operation failed!");
+        }
+    }, 2000);
+});
 
-fetchData((data) => {
-    console.log(data);
+myPromise.then((result) => {
+    console.log(result);
 })
+.catch((error) => {
+        console.log(error);
+    }) 

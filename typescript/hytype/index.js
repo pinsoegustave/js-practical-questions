@@ -1,1 +1,1 @@
-console.log("Helllo typescript compiler");
+var age = 19;

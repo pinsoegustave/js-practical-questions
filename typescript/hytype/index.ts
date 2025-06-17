@@ -1,1 +1,2 @@
-console.log("Helllo typescript compiler");
+let age: number = 19
+

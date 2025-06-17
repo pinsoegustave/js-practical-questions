@@ -1,8 +1,6 @@
-let sales: number = 123_456_789;
-let course: string = "Typescript"
-let is_published: boolean = true;
-let level;
+let numbers: number[] = [];
+numbers[0] = 1
+numbers[1] = 2
+numbers[2] = 3
 
-function render(document: any) {
-    console.log(document);
-}
+numbers.forEach(n => n.toFixed)

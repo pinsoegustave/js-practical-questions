@@ -1,6 +1,4 @@
 "use strict";
-let age = 19;
-if (age < 50)
-    age += 10;
-console.log(age);
+let mySize = 110;
+console.log(mySize);
 //# sourceMappingURL=index.js.map

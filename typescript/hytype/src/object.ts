@@ -1,5 +1,5 @@
 let employee : {
-    id: number,
+    readonly id: number,
     name: string,
     retire: (date: Date) => void
 } = {

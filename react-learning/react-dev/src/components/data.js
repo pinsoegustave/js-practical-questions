@@ -31,3 +31,5 @@ export const people = [{
     imageId: 'lrWQx8l'
   }];
   
+
+  export default people;

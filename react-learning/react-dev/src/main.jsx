@@ -6,9 +6,9 @@ import Sculptures from './components/Sculptures.jsx'
 import Form from './components/StateAsA.jsx'
 
 createRoot(document.getElementById('root')).render(
-  // <StrictMode>
-  //   <App />
-  // </StrictMode>,
-  // <Sculptures />
+  <StrictMode>
+    <App />
+  </StrictMode>,
+  <Sculptures />
   <Form />
 )

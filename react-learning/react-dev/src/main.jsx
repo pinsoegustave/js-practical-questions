@@ -8,7 +8,7 @@ import Form from './components/StateAsA.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
+    <Sculptures />
+    <Form />
   </StrictMode>,
-  <Sculptures />
-  <Form />
 )

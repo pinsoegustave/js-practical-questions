@@ -32,7 +32,7 @@ export const people = [{
   }];
   
 
-  // export default people;
+  export default people; sculptureList;
 
 export const sculptureList = [{
   name: 'Homenaje a la Neurocirugía',
@@ -108,4 +108,4 @@ export const sculptureList = [{
   alt: 'A group of bronze hippo sculptures emerging from the sett sidewalk as if they were swimming.'
 }];
 
-export default sculptureList;
+// export default sculptureList;

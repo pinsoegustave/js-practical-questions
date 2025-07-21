@@ -32,7 +32,7 @@ export const people = [{
   }];
   
 
-  export default people; sculptureList;
+  
 
 export const sculptureList = [{
   name: 'Homenaje a la Neurocirugía',
@@ -109,3 +109,4 @@ export const sculptureList = [{
 }];
 
 // export default sculptureList;
+export default people; sculptureList;
